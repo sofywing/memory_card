@@ -14,7 +14,7 @@ box_minuts = QSpinBox() #створення лічільника хв
 box_minuts.setValue(30) #задаєм 30хв
 box_minuts_lbl = QLabel("хвилин")
 
-question_lbl = QLabel('Question') # питання
+lbl_question = QLabel('Question') # питання
 
 answer_group_box = QGroupBox("Варіанти відповідей")#створення групи віджетів
 
@@ -64,7 +64,7 @@ line1.addWidget(box_minuts_lbl)
 
 main_line = QVBoxLayout()
 main_line.addLayout(line1)
-main_line.addWidget(question_lbl, alignment=(Qt.AlignCenter|Qt.AlignCenter))
+main_line.addWidget(lbl_question, alignment=(Qt.AlignCenter|Qt.AlignCenter))
 
 line2 = QHBoxLayout()
 line2.addWidget(answer_group_box)
